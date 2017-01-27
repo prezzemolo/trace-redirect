@@ -2,7 +2,46 @@ trace-redirect [![][mit-badge]][mit]
 ==========
 trace where redirects end up.
 
-LICENSE
+Installation
+----------
+```
+npm install trace-redirect
+```
+
+Usage
+----------
+
+#### on JavaScript
+```js
+const tracer = require('trace-redirect');
+
+async function test () {
+	const result = await tracer("https://t.co/5NYRQw5lRy");
+	console.log(result);
+}
+
+test();
+
+/* 
+'http://www.nicovideo.jp/watch/sm7808731'
+*/
+```
+
+#### on TypeScript
+```ts
+import tracer from 'trace-redirect';
+
+const result = await tracer("https://t.co/5NYRQw5lRy");
+
+console.log(result);
+
+/* 
+'http://www.nicovideo.jp/watch/sm7808731'
+*/
+```
+
+
+License
 ----------
 The MIT License. See [LICENSE](LICENSE).
 
