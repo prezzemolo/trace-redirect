@@ -10,7 +10,7 @@ export default function (url: string): Promise<any> {
 		const parsedUrl = URL.parse(url);
 
 		/* structure option object for http / https module */
-		const options = {
+		const options: https.RequestOptions = {
 			"headers": {
 				"User-Agent": "track-redirect npm module"
 			},
@@ -19,7 +19,11 @@ export default function (url: string): Promise<any> {
 			"path":		parsedUrl.path
 		};
 
-		const callback = (res: any) => {
+		/* if port exist, set port */
+		if (parsedUrl.port) options.port = Number(parsedUrl.port);
+
+		/* request callback */
+		const callback = (res: http.IncomingMessage) => {
 			resolve(res.headers);
 		};
 
