@@ -1,9 +1,9 @@
 {
   "name": "trace-redirect",
-  "version": "1.0.2",
+  "version": "1.0.2-1",
   "description": "trace where redirects end up.",
   "main": "./release/index.js",
-  "typings": "./release/index.d.ts",
+  "types": "./release/types/index.d.ts",
   "scripts": {
     "test": "gulp test",
     "lint": "gulp lint",
