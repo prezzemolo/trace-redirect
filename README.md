@@ -11,9 +11,9 @@ npm install trace-redirect
 Usage
 ----------
 
-#### on JavaScript
+#### on commonJS
 ```js
-const tracer = require('trace-redirect');
+const tracer = require('trace-redirect').default;
 
 async function test () {
 	const result = await tracer("https://t.co/5NYRQw5lRy");
