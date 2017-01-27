@@ -1,0 +1,31 @@
+{
+  "name": "track-redirect",
+  "version": "0.0.0",
+  "description": "trace where redirects end up.",
+  "main": "./release/index.js",
+  "typings": "./release/index.d.ts",
+  "scripts": {
+    "test": "gulp test",
+    "lint": "gulp lint",
+    "build": "gulp build",
+    "bash": "bash"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prezzemolo/track-redirect.git"
+  },
+  "author": "prezzemolo <git@prezzemolo.ga>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prezzemolo/track-redirect/issues"
+  },
+  "homepage": "https://github.com/prezzemolo/track-redirect#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-tslint": "^7.0.1",
+    "gulp-typescript": "^3.1.4",
+    "merge2": "^1.0.3",
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.5"
+  }
+}

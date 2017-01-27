@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "removeComments": false,
+        "declaration": true,
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "rootDir": "./src",
+        "outDir": "./release",
+        "declarationDir": "./release/types"
+    },
+    "compileOnSave": false,
+    "include": [
+        "./src/**/*"
+    ]
+}
