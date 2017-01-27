@@ -16,21 +16,23 @@ export default function (url: string): Promise<any> {
 			},
 			"host":		parsedUrl.hostname,
 			"method":	"HEAD",
-			"path":		parsedUrl.path,
-			"port":		Number(parsedUrl.port)
+			"path":		parsedUrl.path
+		};
+
+		const callback = (res: any) => {
+			resolve(res.headers);
 		};
 
 		/* request page */
-		if (parsedUrl.protocol === "http:") {
-			const req = http.request(options, (res) => {
-				resolve(res.headers);
-			});
-			req.end();
-		} else if (parsedUrl.protocol === "https:") {
-			const req = https.request(options, (res) => {
-				resolve(res.headers);
-			});
-			req.end();
-		}
+		const req = parsedUrl.protocol === "http:"
+			? http.request(options, callback)
+			: parsedUrl.protocol === "https:"
+			? https.request(options, callback)
+			: null;
+
+		/* reject when not supported protocol */
+		if (req === null) reject('not-supported-protocol');
+
+		req.end();
 	});
 };
