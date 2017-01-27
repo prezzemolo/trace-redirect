@@ -1,5 +1,5 @@
 {
-  "name": "track-redirect",
+  "name": "trace-redirect",
   "version": "1.0.0",
   "description": "trace where redirects end up.",
   "main": "./release/index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prezzemolo/track-redirect.git"
+    "url": "git+https://github.com/prezzemolo/trace-redirect.git"
   },
   "author": "prezzemolo <git@prezzemolo.ga>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/prezzemolo/track-redirect/issues"
+    "url": "https://github.com/prezzemolo/trace-redirect/issues"
   },
-  "homepage": "https://github.com/prezzemolo/track-redirect#readme",
+  "homepage": "https://github.com/prezzemolo/trace-redirect#readme",
   "devDependencies": {
     "@types/node": "^7.0.4",
     "gulp": "^3.9.1",
