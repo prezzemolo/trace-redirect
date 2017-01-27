@@ -1,4 +1,4 @@
-trace-redirect [![][mit-badge]][mit]  
+trace-redirect [![][mit-badge]][mit] [![][travis-badge]][travis]
 ==========
 trace where redirects end up.
 
@@ -47,3 +47,5 @@ The MIT License. See [LICENSE](LICENSE).
 
 [mit]: http://opensource.org/licenses/MIT
 [mit-badge]:https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square
+[travis]: https://travis-ci.org/prezzemolo/trace-redirect
+[travis-badge]: https://travis-ci.org/prezzemolo/trace-redirect.svg?branch=master
