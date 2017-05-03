@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/prezzemolo/trace-redirect#readme",
   "devDependencies": {
-    "@types/node": "7.0.12",
+    "@types/node": "7.0.15",
     "tslint": "4.5.1",
     "typescript": "2.2.2"
   }
