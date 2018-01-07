@@ -1,6 +1,6 @@
 {
   "name": "trace-redirect",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "trace where redirects end up.",
   "main": "./release/index.js",
   "types": "./release/types/index.d.ts",
